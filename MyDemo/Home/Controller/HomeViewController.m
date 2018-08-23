@@ -20,6 +20,7 @@
 #import "ADSwitchViewController.h"
 #import "ScanViewController.h"
 #import "GridViewController.h"
+#import "RefreshViewController.h"
 
 @interface HomeViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -40,14 +41,13 @@
 }
 
 - (void)buildTableView {
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
 }
 
 #pragma mark - UITableView
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -87,6 +87,8 @@
         cell.textLabel.text = @"二维码扫描";
     } else if (indexPath.row == 12) {
         cell.textLabel.text = @"课程表";
+    } else if (indexPath.row == 13) {
+        cell.textLabel.text = @"刷新列表";
     } else {
         cell.textLabel.text = @"";
     }
@@ -134,6 +136,9 @@
     } else if (indexPath.row == 12) {
         GridViewController *gridVC = [[GridViewController alloc] init];
         [self.navigationController pushViewController:gridVC animated:YES];
+    } else if (indexPath.row == 13) {
+        RefreshViewController *refreshVC = [[RefreshViewController alloc] init];
+        [self.navigationController pushViewController:refreshVC animated:YES];
     } else {
         
     }

@@ -11,6 +11,11 @@
 		3048A336212E9E250057447D /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3048A335212E9E250057447D /* test.jpg */; };
 		3048A338212E9FE10057447D /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3048A337212E9FE10057447D /* image.jpg */; };
 		3048A33A212E9FF80057447D /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3048A339212E9FF80057447D /* 1.plist */; };
+		3048A341212EAC5E0057447D /* RefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3048A340212EAC5E0057447D /* RefreshViewController.m */; };
+		3048A34C212EADA20057447D /* PMBallLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3048A344212EADA10057447D /* PMBallLayer.m */; };
+		3048A34D212EADA20057447D /* PMElasticView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3048A347212EADA10057447D /* PMElasticView.m */; };
+		3048A34E212EADA20057447D /* PMLineLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3048A349212EADA10057447D /* PMLineLayer.m */; };
+		3048A34F212EADA20057447D /* UIScrollView+ElasticRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 3048A34B212EADA10057447D /* UIScrollView+ElasticRefresh.m */; };
 		30609BEC212E939D002EBA4A /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30609BE9212E939D002EBA4A /* CardViewController.m */; };
 		30609BEF212E93C5002EBA4A /* CardCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 30609BEE212E93C5002EBA4A /* CardCollectionViewLayout.m */; };
 		30609BF4212E945F002EBA4A /* BoardingCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30609BF0212E945F002EBA4A /* BoardingCardViewController.m */; };
@@ -200,6 +205,17 @@
 		3048A335212E9E250057447D /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		3048A337212E9FE10057447D /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		3048A339212E9FF80057447D /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		3048A33F212EAC5E0057447D /* RefreshViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RefreshViewController.h; sourceTree = "<group>"; };
+		3048A340212EAC5E0057447D /* RefreshViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefreshViewController.m; sourceTree = "<group>"; };
+		3048A343212EADA10057447D /* PMBallLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMBallLayer.h; sourceTree = "<group>"; };
+		3048A344212EADA10057447D /* PMBallLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMBallLayer.m; sourceTree = "<group>"; };
+		3048A345212EADA10057447D /* PMElasticRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMElasticRefresh.h; sourceTree = "<group>"; };
+		3048A346212EADA10057447D /* PMElasticView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMElasticView.h; sourceTree = "<group>"; };
+		3048A347212EADA10057447D /* PMElasticView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMElasticView.m; sourceTree = "<group>"; };
+		3048A348212EADA10057447D /* PMLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMLineLayer.h; sourceTree = "<group>"; };
+		3048A349212EADA10057447D /* PMLineLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMLineLayer.m; sourceTree = "<group>"; };
+		3048A34A212EADA10057447D /* UIScrollView+ElasticRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ElasticRefresh.h"; sourceTree = "<group>"; };
+		3048A34B212EADA10057447D /* UIScrollView+ElasticRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ElasticRefresh.m"; sourceTree = "<group>"; };
 		30609BE5212E8F37002EBA4A /* MyDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyDemo.entitlements; sourceTree = "<group>"; };
 		30609BE8212E939D002EBA4A /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
 		30609BE9212E939D002EBA4A /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
@@ -575,6 +591,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3048A33B212EAC390057447D /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				3048A342212EADA10057447D /* Classses */,
+				3048A33C212EAC390057447D /* Controller */,
+				3048A33D212EAC390057447D /* Model */,
+				3048A33E212EAC390057447D /* View */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		3048A33C212EAC390057447D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3048A33F212EAC5E0057447D /* RefreshViewController.h */,
+				3048A340212EAC5E0057447D /* RefreshViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3048A33D212EAC390057447D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3048A33E212EAC390057447D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3048A342212EADA10057447D /* Classses */ = {
+			isa = PBXGroup;
+			children = (
+				3048A343212EADA10057447D /* PMBallLayer.h */,
+				3048A344212EADA10057447D /* PMBallLayer.m */,
+				3048A345212EADA10057447D /* PMElasticRefresh.h */,
+				3048A346212EADA10057447D /* PMElasticView.h */,
+				3048A347212EADA10057447D /* PMElasticView.m */,
+				3048A348212EADA10057447D /* PMLineLayer.h */,
+				3048A349212EADA10057447D /* PMLineLayer.m */,
+				3048A34A212EADA10057447D /* UIScrollView+ElasticRefresh.h */,
+				3048A34B212EADA10057447D /* UIScrollView+ElasticRefresh.m */,
+			);
+			path = Classses;
+			sourceTree = "<group>";
+		};
 		30609BE6212E939D002EBA4A /* Cards */ = {
 			isa = PBXGroup;
 			children = (
@@ -997,6 +1063,7 @@
 				30609C72212E992F002EBA4A /* ADSwitch */,
 				30609C7C212E99CC002EBA4A /* Scan */,
 				30609C86212E9A19002EBA4A /* Grid */,
+				3048A33B212EAC390057447D /* Refresh */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1945,6 +2012,7 @@
 				30609C5D212E976B002EBA4A /* TOCroppedImageAttributes.m in Sources */,
 				A7AA5DA420C7CBAF00FFFA04 /* ADTabBarSource.m in Sources */,
 				30609CA4212E9C0C002EBA4A /* ShowStarView.m in Sources */,
+				3048A34F212EADA20057447D /* UIScrollView+ElasticRefresh.m in Sources */,
 				A7AA5D0D20C7CA8C00FFFA04 /* UIImage+ImageEffects.m in Sources */,
 				A7AA5EF220C7CFB900FFFA04 /* MSSBrowseActionSheet.m in Sources */,
 				A7AA5D8420C7CA8D00FFFA04 /* NSMutableArray+MutableArrayCheck.m in Sources */,
@@ -1986,12 +2054,14 @@
 				A7AA5EFD20C7CFB900FFFA04 /* ZFBarChart.m in Sources */,
 				A7AA5EF920C7CFB900FFFA04 /* MSSBrowseActionSheetCell.m in Sources */,
 				30609C51212E9765002EBA4A /* TOCropOverlayView.m in Sources */,
+				3048A341212EAC5E0057447D /* RefreshViewController.m in Sources */,
 				30609C19212E9647002EBA4A /* SignatureViewController.m in Sources */,
 				A7AA5F1320C7CFB900FFFA04 /* ZFRadar.m in Sources */,
 				A7AA5F0B20C7CFB900FFFA04 /* ZFTranslucencePath.m in Sources */,
 				30609BEF212E93C5002EBA4A /* CardCollectionViewLayout.m in Sources */,
 				A7AA5F2820C7CFB900FFFA04 /* WYMainPieChartView.m in Sources */,
 				3048A334212E9CE20057447D /* PaletteViewController.m in Sources */,
+				3048A34E212EADA20057447D /* PMLineLayer.m in Sources */,
 				A7AA5F0D20C7CFB900FFFA04 /* ZFCircle.m in Sources */,
 				A7AA5ED520C7CFB900FFFA04 /* ZFBrightnessView.m in Sources */,
 				A7AA5F1020C7CFB900FFFA04 /* ZFYAxisLine.m in Sources */,
@@ -1999,8 +2069,10 @@
 				A7AA5F2320C7CFB900FFFA04 /* WYLineChartView.m in Sources */,
 				30609C5F212E976B002EBA4A /* TOCropViewControllerTransitioning.m in Sources */,
 				A7AA5D1120C7CA8C00FFFA04 /* NSString+Extension.m in Sources */,
+				3048A34C212EADA20057447D /* PMBallLayer.m in Sources */,
 				A7AA5F2920C7CFB900FFFA04 /* WYSectorLayer.m in Sources */,
 				A7AA5EEE20C7CFB900FFFA04 /* MSSBrowseLoadingImageView.m in Sources */,
+				3048A34D212EADA20057447D /* PMElasticView.m in Sources */,
 				A7AA5D1020C7CA8C00FFFA04 /* UIView+Frame.m in Sources */,
 				A7AA5F1B20C7CFB900FFFA04 /* ZFHorizontalBarChart.m in Sources */,
 				A7AA5F0420C7CFB900FFFA04 /* ZFCirqueChart.m in Sources */,
