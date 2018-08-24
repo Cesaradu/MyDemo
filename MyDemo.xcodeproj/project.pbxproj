@@ -56,6 +56,8 @@
 		30609CA4212E9C0C002EBA4A /* ShowStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30609CA2212E9C0C002EBA4A /* ShowStarView.m */; };
 		30609CA7212E9C38002EBA4A /* ADCardTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 30609CA6212E9C38002EBA4A /* ADCardTransition.m */; };
 		30609CAA212E9C5C002EBA4A /* UIView+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30609CA9212E9C5C002EBA4A /* UIView+Rotate.m */; };
+		30F74BEF212FD6B600088B94 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F74BEE212FD6B500088B94 /* LoadingViewController.m */; };
+		30F74BF2212FD6D200088B94 /* ADLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F74BF1212FD6D200088B94 /* ADLoadingView.m */; };
 		382FCF731E67F4B60092DE17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 382FCF721E67F4B60092DE17 /* main.m */; };
 		382FCF761E67F4B60092DE17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 382FCF751E67F4B60092DE17 /* AppDelegate.m */; };
 		382FCF991E67FD700092DE17 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382FCF981E67FD700092DE17 /* HomeViewController.m */; };
@@ -293,6 +295,10 @@
 		30609CA6212E9C38002EBA4A /* ADCardTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCardTransition.m; sourceTree = "<group>"; };
 		30609CA8212E9C5C002EBA4A /* UIView+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Rotate.h"; sourceTree = "<group>"; };
 		30609CA9212E9C5C002EBA4A /* UIView+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rotate.m"; sourceTree = "<group>"; };
+		30F74BED212FD6B500088B94 /* LoadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		30F74BEE212FD6B500088B94 /* LoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		30F74BF0212FD6D200088B94 /* ADLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADLoadingView.h; sourceTree = "<group>"; };
+		30F74BF1212FD6D200088B94 /* ADLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADLoadingView.m; sourceTree = "<group>"; };
 		382FCF6E1E67F4B60092DE17 /* MyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		382FCF721E67F4B60092DE17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		382FCF741E67F4B60092DE17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -596,6 +602,8 @@
 			children = (
 				3048A33F212EAC5E0057447D /* RefreshViewController.h */,
 				3048A340212EAC5E0057447D /* RefreshViewController.m */,
+				30F74BED212FD6B500088B94 /* LoadingViewController.h */,
+				30F74BEE212FD6B500088B94 /* LoadingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -612,6 +620,8 @@
 		3048A33E212EAC390057447D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				30F74BF0212FD6D200088B94 /* ADLoadingView.h */,
+				30F74BF1212FD6D200088B94 /* ADLoadingView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1984,6 +1994,7 @@
 				A7AA5F0620C7CFB900FFFA04 /* ZFHorizontalAxis.m in Sources */,
 				A7AA5EDA20C7CFB900FFFA04 /* MMMaterialDesignSpinner.m in Sources */,
 				A7AA5F2020C7CFB900FFFA04 /* WYLineChartMainLineView.m in Sources */,
+				30F74BF2212FD6D200088B94 /* ADLoadingView.m in Sources */,
 				A7AA5D0920C7CA8C00FFFA04 /* UIImage+Color.m in Sources */,
 				30609C5D212E976B002EBA4A /* TOCroppedImageAttributes.m in Sources */,
 				A7AA5DA420C7CBAF00FFFA04 /* ADTabBarSource.m in Sources */,
@@ -2077,6 +2088,7 @@
 				A7AA5F2620C7CFB900FFFA04 /* WYPieCenterCircle.m in Sources */,
 				A7AA5EF520C7CFB900FFFA04 /* MSSBrowseBaseViewController.m in Sources */,
 				30609BF4212E945F002EBA4A /* BoardingCardViewController.m in Sources */,
+				30F74BEF212FD6B600088B94 /* LoadingViewController.m in Sources */,
 				30609C69212E988C002EBA4A /* IDPhotoViewController.m in Sources */,
 				A7AA5F2220C7CFB900FFFA04 /* WYChartCategory.m in Sources */,
 				A7AA5DA620C7CBAF00FFFA04 /* ADTabBar.m in Sources */,

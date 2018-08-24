@@ -8,6 +8,7 @@
 
 #import "RefreshViewController.h"
 #import "ADHappyBirdGifRefresh.h"
+#import "LoadingViewController.h"
 
 @interface RefreshViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -68,6 +69,12 @@
     cell.textLabel.text = [NSString stringWithFormat:@"第%ld行", indexPath.row + 1];
 
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    LoadingViewController *loadVC = [[LoadingViewController alloc] init];
+    [self.navigationController pushViewController:loadVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
