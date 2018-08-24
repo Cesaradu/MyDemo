@@ -7,7 +7,7 @@
 //
 
 #import "RefreshViewController.h"
-#import "PMElasticRefresh.h"
+#import "ADHappyBirdGifRefresh.h"
 
 @interface RefreshViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -27,10 +27,27 @@
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView pm_RefreshHeaderWithBlock:^{
-        NSLog(@"下拉刷新");
-    }];
     [self.view addSubview:self.tableView];
+    
+    [self refreshData];
+}
+
+- (void)refreshData {
+    ADHappyBirdGifRefresh *header = [ADHappyBirdGifRefresh headerWithRefreshingTarget:self refreshingAction:@selector(stopRefresh)];
+    
+    // 马上进入刷新状态
+    [header beginRefreshing];
+    
+    // 设置header
+    self.tableView.mj_header = header;
+}
+
+- (void)stopRefresh {
+    [self performSelector:@selector(stop) withObject:self afterDelay:3];
+}
+
+- (void)stop {
+    [self.tableView.mj_header endRefreshing];
 }
 
 #pragma mark - UITableView
