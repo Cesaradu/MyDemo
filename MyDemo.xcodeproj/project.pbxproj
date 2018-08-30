@@ -56,6 +56,8 @@
 		30609CA4212E9C0C002EBA4A /* ShowStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30609CA2212E9C0C002EBA4A /* ShowStarView.m */; };
 		30609CA7212E9C38002EBA4A /* ADCardTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 30609CA6212E9C38002EBA4A /* ADCardTransition.m */; };
 		30609CAA212E9C5C002EBA4A /* UIView+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30609CA9212E9C5C002EBA4A /* UIView+Rotate.m */; };
+		30CCB9B6213693BC00E021C0 /* MoreFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CCB9B5213693BC00E021C0 /* MoreFunctionViewController.m */; };
+		30CCB9B92136957800E021C0 /* MoreFunctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CCB9B82136957800E021C0 /* MoreFunctionCell.m */; };
 		30F74BEF212FD6B600088B94 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F74BEE212FD6B500088B94 /* LoadingViewController.m */; };
 		30F74BF2212FD6D200088B94 /* ADLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F74BF1212FD6D200088B94 /* ADLoadingView.m */; };
 		382FCF731E67F4B60092DE17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 382FCF721E67F4B60092DE17 /* main.m */; };
@@ -295,6 +297,10 @@
 		30609CA6212E9C38002EBA4A /* ADCardTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCardTransition.m; sourceTree = "<group>"; };
 		30609CA8212E9C5C002EBA4A /* UIView+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Rotate.h"; sourceTree = "<group>"; };
 		30609CA9212E9C5C002EBA4A /* UIView+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rotate.m"; sourceTree = "<group>"; };
+		30CCB9B4213693BC00E021C0 /* MoreFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreFunctionViewController.h; sourceTree = "<group>"; };
+		30CCB9B5213693BC00E021C0 /* MoreFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreFunctionViewController.m; sourceTree = "<group>"; };
+		30CCB9B72136957800E021C0 /* MoreFunctionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreFunctionCell.h; sourceTree = "<group>"; };
+		30CCB9B82136957800E021C0 /* MoreFunctionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreFunctionCell.m; sourceTree = "<group>"; };
 		30F74BED212FD6B500088B94 /* LoadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		30F74BEE212FD6B500088B94 /* LoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		30F74BF0212FD6D200088B94 /* ADLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADLoadingView.h; sourceTree = "<group>"; };
@@ -962,6 +968,41 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		30CCB9B0213692C500E021C0 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				30CCB9B12136930C00E021C0 /* Controller */,
+				30CCB9B32136930D00E021C0 /* Model */,
+				30CCB9B22136930D00E021C0 /* View */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		30CCB9B12136930C00E021C0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				30CCB9B4213693BC00E021C0 /* MoreFunctionViewController.h */,
+				30CCB9B5213693BC00E021C0 /* MoreFunctionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		30CCB9B22136930D00E021C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30CCB9B72136957800E021C0 /* MoreFunctionCell.h */,
+				30CCB9B82136957800E021C0 /* MoreFunctionCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30CCB9B32136930D00E021C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		382FCF651E67F4B60092DE17 = {
 			isa = PBXGroup;
 			children = (
@@ -1049,6 +1090,7 @@
 				30609C7C212E99CC002EBA4A /* Scan */,
 				30609C86212E9A19002EBA4A /* Grid */,
 				3048A33B212EAC390057447D /* Refresh */,
+				30CCB9B0213692C500E021C0 /* CollectionView */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1981,6 +2023,7 @@
 				A7AA5ED420C7CFB900FFFA04 /* UIViewController+ZFPlayerRotation.m in Sources */,
 				A7AA5F1420C7CFB900FFFA04 /* ZFPolygon.m in Sources */,
 				A7AA5F2720C7CFB900FFFA04 /* WYPieChartForegroundView.m in Sources */,
+				30CCB9B6213693BC00E021C0 /* MoreFunctionViewController.m in Sources */,
 				A7AA5DA720C7CBAF00FFFA04 /* TabBarItemAnimation.m in Sources */,
 				A7AA5D8E20C7CA8D00FFFA04 /* KeyChain.m in Sources */,
 				A7AA5F0720C7CFB900FFFA04 /* ZFConst.m in Sources */,
@@ -2078,6 +2121,7 @@
 				A7AA5D9020C7CA8D00FFFA04 /* UUID.m in Sources */,
 				A7AA5F1520C7CFB900FFFA04 /* ZFRadarChart.m in Sources */,
 				30609CA1212E9BED002EBA4A /* CardAnimationCell.m in Sources */,
+				30CCB9B92136957800E021C0 /* MoreFunctionCell.m in Sources */,
 				30609C70212E98D9002EBA4A /* BeautyViewController.m in Sources */,
 				30609C52212E9765002EBA4A /* TOCropScrollView.m in Sources */,
 				A7AA5F2A20C7CFB900FFFA04 /* WYPieSector.m in Sources */,

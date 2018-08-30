@@ -21,6 +21,7 @@
 #import "ScanViewController.h"
 #import "GridViewController.h"
 #import "RefreshViewController.h"
+#import "MoreFunctionViewController.h"
 
 @interface HomeViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -89,6 +90,8 @@
         cell.textLabel.text = @"课程表";
     } else if (indexPath.row == 13) {
         cell.textLabel.text = @"刷新列表";
+    } else if (indexPath.row == 14) {
+        cell.textLabel.text = @"collectionView点击效果";
     } else {
         cell.textLabel.text = @"";
     }
@@ -139,6 +142,9 @@
     } else if (indexPath.row == 13) {
         RefreshViewController *refreshVC = [[RefreshViewController alloc] init];
         [self.navigationController pushViewController:refreshVC animated:YES];
+    } else if (indexPath.row == 14) {
+        MoreFunctionViewController *moreVC = [[MoreFunctionViewController alloc] init];
+        [self.navigationController pushViewController:moreVC animated:YES];
     } else {
         
     }
