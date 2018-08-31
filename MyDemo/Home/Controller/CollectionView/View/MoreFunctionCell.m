@@ -12,7 +12,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor colorWithHexString:BGColor alpha:1.0];
+        self.backgroundColor = [UIColor clearColor];
         self.bgView = [[UIView alloc] init];
         self.bgView.backgroundColor = [UIColor colorWithHexString:@"ffffff" alpha:1.0];
         self.bgView.layer.cornerRadius = 5;
@@ -32,7 +32,6 @@
         }];
         
         self.image = [[UIImageView alloc] init];
-        self.image.backgroundColor = [UIColor orangeColor];
         self.image.contentMode = UIViewContentModeScaleAspectFit;
         [self.bgView addSubview:self.image];
         [self.image mas_makeConstraints:^(MASConstraintMaker *make) {
