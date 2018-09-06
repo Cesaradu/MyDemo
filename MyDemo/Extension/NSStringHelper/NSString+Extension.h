@@ -30,4 +30,21 @@
 //判断两个日期大小
 + (int)compareOneDay:(NSString *)firstDay withAnotherDay:(NSString *)secondDay;
 
+- (NSString *)emoji;
+
+- (CGSize)sizeWithMaxWidth:(CGFloat)width andFont:(UIFont *)font;
+
+- (NSString *)originName;
+
++ (NSString *)currentName;
+
+- (NSString *)firstStringSeparatedByString:(NSString *)separeted;
+
+//json字符串转数组
++ (NSArray *)arrayWithJsonString:(NSString *)jsonStr;
+
+//获取当前时间
++ (NSString *)getCurrentTimes;
+
 @end
+

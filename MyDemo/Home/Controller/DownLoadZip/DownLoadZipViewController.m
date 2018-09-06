@@ -90,8 +90,6 @@
         NSLog(@"下载路径 = %@", self.dataPath);
         [urlData writeToFile:self.dataPath atomically:YES];
         
-        [self showSuccessView:@"下载完成"];
-        
     });
 
 }
@@ -110,8 +108,6 @@
         }else{
             NSLog(@"delete fail");
         }
-        
-        [self showSuccessView:@"解压完成"];
     }
 }
 

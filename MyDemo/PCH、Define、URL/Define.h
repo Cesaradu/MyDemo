@@ -80,5 +80,21 @@
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 #define RGBA_COLOR(R, G, B, A) [UIColor colorWithRed:((R) / 255.0f) green:((G) / 255.0f) blue:((B) / 255.0f) alpha:A]
 
+//聊天相关
+#define videoViewH ScreenHeight * 0.64 // 录制视频视图高度
+#define videoViewX ScreenHeight * 0.36 // 录制视频视图X
+
+#define     CHATBOX_BUTTON_WIDTH        37
+#define     HEIGHT_TEXTVIEW             HEIGHT_TABBAR * 0.74
+#define     MAX_TEXTVIEW_HEIGHT         104
+#define     HEIGHT_CHATBOXVIEW          215
+
+#define kVideoType @".mp4"        // video类型
+#define kRecoderType @".wav"
+#define kChatVideoPath @"Chat/Video"  // video子路径
+
+#define MessageFont [UIFont systemFontOfSize:15.0]
+#define ADRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
+
 
 #endif /* Define_h */

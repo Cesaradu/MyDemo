@@ -56,6 +56,8 @@
 		30609CA4212E9C0C002EBA4A /* ShowStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30609CA2212E9C0C002EBA4A /* ShowStarView.m */; };
 		30609CA7212E9C38002EBA4A /* ADCardTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 30609CA6212E9C38002EBA4A /* ADCardTransition.m */; };
 		30609CAA212E9C5C002EBA4A /* UIView+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30609CA9212E9C5C002EBA4A /* UIView+Rotate.m */; };
+		3092218F2140D31900E5DC77 /* FloatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3092218E2140D31900E5DC77 /* FloatingViewController.m */; };
+		309221922140D33100E5DC77 /* ADFloatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309221912140D33100E5DC77 /* ADFloatingView.m */; };
 		30CCB9B6213693BC00E021C0 /* MoreFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CCB9B5213693BC00E021C0 /* MoreFunctionViewController.m */; };
 		30CCB9B92136957800E021C0 /* MoreFunctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CCB9B82136957800E021C0 /* MoreFunctionCell.m */; };
 		30F74BEF212FD6B600088B94 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F74BEE212FD6B500088B94 /* LoadingViewController.m */; };
@@ -297,6 +299,12 @@
 		30609CA6212E9C38002EBA4A /* ADCardTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCardTransition.m; sourceTree = "<group>"; };
 		30609CA8212E9C5C002EBA4A /* UIView+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Rotate.h"; sourceTree = "<group>"; };
 		30609CA9212E9C5C002EBA4A /* UIView+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rotate.m"; sourceTree = "<group>"; };
+		3092218D2140D31900E5DC77 /* FloatingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatingViewController.h; sourceTree = "<group>"; };
+		3092218E2140D31900E5DC77 /* FloatingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatingViewController.m; sourceTree = "<group>"; };
+		309221902140D33100E5DC77 /* ADFloatingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADFloatingView.h; sourceTree = "<group>"; };
+		309221912140D33100E5DC77 /* ADFloatingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADFloatingView.m; sourceTree = "<group>"; };
+		309221932140F3B900E5DC77 /* ADMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADMatrix.h; sourceTree = "<group>"; };
+		309221942140F3CB00E5DC77 /* ADPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADPoint.h; sourceTree = "<group>"; };
 		30CCB9B4213693BC00E021C0 /* MoreFunctionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreFunctionViewController.h; sourceTree = "<group>"; };
 		30CCB9B5213693BC00E021C0 /* MoreFunctionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreFunctionViewController.m; sourceTree = "<group>"; };
 		30CCB9B72136957800E021C0 /* MoreFunctionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreFunctionCell.h; sourceTree = "<group>"; };
@@ -968,6 +976,43 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		309221892140D2CB00E5DC77 /* FloatingView */ = {
+			isa = PBXGroup;
+			children = (
+				3092218A2140D2E800E5DC77 /* Controller */,
+				3092218C2140D2F600E5DC77 /* Model */,
+				3092218B2140D2EF00E5DC77 /* View */,
+			);
+			path = FloatingView;
+			sourceTree = "<group>";
+		};
+		3092218A2140D2E800E5DC77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3092218D2140D31900E5DC77 /* FloatingViewController.h */,
+				3092218E2140D31900E5DC77 /* FloatingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3092218B2140D2EF00E5DC77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				309221902140D33100E5DC77 /* ADFloatingView.h */,
+				309221912140D33100E5DC77 /* ADFloatingView.m */,
+				309221932140F3B900E5DC77 /* ADMatrix.h */,
+				309221942140F3CB00E5DC77 /* ADPoint.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3092218C2140D2F600E5DC77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		30CCB9B0213692C500E021C0 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1091,6 +1136,7 @@
 				30609C86212E9A19002EBA4A /* Grid */,
 				3048A33B212EAC390057447D /* Refresh */,
 				30CCB9B0213692C500E021C0 /* CollectionView */,
+				309221892140D2CB00E5DC77 /* FloatingView */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1198,8 +1244,8 @@
 		A7AA5BC920C7CA8C00FFFA04 /* UIViewHelper */ = {
 			isa = PBXGroup;
 			children = (
-				A7AA5BCA20C7CA8C00FFFA04 /* UIView+Frame.m */,
 				A7AA5BCB20C7CA8C00FFFA04 /* UIView+Frame.h */,
+				A7AA5BCA20C7CA8C00FFFA04 /* UIView+Frame.m */,
 			);
 			path = UIViewHelper;
 			sourceTree = "<group>";
@@ -2113,7 +2159,9 @@
 				30609C71212E98D9002EBA4A /* GPUImageBeautifyFilter.m in Sources */,
 				A7AA5EF020C7CFB900FFFA04 /* MSSBrowseCollectionViewCell.m in Sources */,
 				A7AA5F1620C7CFB900FFFA04 /* ZFGenericAxis.m in Sources */,
+				309221922140D33100E5DC77 /* ADFloatingView.m in Sources */,
 				A7AA5ED020C7CFB900FFFA04 /* ZFPlayerModel.m in Sources */,
+				3092218F2140D31900E5DC77 /* FloatingViewController.m in Sources */,
 				30609C20212E9695002EBA4A /* BlueToothViewController.m in Sources */,
 				A7AA5DA320C7CBAF00FFFA04 /* ADTabBarItem.m in Sources */,
 				30609C09212E95DF002EBA4A /* WaterfallCollectionViewController.m in Sources */,

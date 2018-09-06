@@ -22,6 +22,7 @@
 #import "GridViewController.h"
 #import "RefreshViewController.h"
 #import "MoreFunctionViewController.h"
+#import "FloatingViewController.h"
 
 @interface HomeViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -92,6 +93,8 @@
         cell.textLabel.text = @"刷新列表";
     } else if (indexPath.row == 14) {
         cell.textLabel.text = @"collectionView点击效果";
+    } else if (indexPath.row == 15) {
+        cell.textLabel.text = @"气泡浮动效果";
     } else {
         cell.textLabel.text = @"";
     }
@@ -145,6 +148,9 @@
     } else if (indexPath.row == 14) {
         MoreFunctionViewController *moreVC = [[MoreFunctionViewController alloc] init];
         [self.navigationController pushViewController:moreVC animated:YES];
+    } else if (indexPath.row == 15) {
+        FloatingViewController *floatingVC = [[FloatingViewController alloc] init];
+        [self.navigationController pushViewController:floatingVC animated:YES];
     } else {
         
     }
